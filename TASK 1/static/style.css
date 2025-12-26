@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.login-card {
+    width: 360px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.login-header {
+    background-color: #26c1d9; /* Cyan Header */
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+.user-icon {
+    font-size: 50px;
+    background: rgba(255,255,255,0.2);
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+.login-content { padding: 25px; }
+
+.input-group { margin-bottom: 15px; }
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    background: #333; /* Dark inputs */
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.btn-signin {
+    width: 100%;
+    padding: 12px;
+    background: #8e44ad; /* Purple Button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.divider { text-align: center; margin: 20px 0; color: #888; font-size: 12px; }
+.signup-footer { text-align: center; font-size: 13px; }
+.signup-footer a { color: #8e44ad; text-decoration: none; font-weight: bold; }

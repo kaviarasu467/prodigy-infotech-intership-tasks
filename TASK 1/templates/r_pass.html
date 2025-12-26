@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Reset Your Password</h2>
+        <p>Enter a new secure password for your account.</p>
+        
+        <form action="/r_pass" method="POST">
+            <div class="input-group">
+                <label for="new_password">New Password</label>
+                <input type="password" id="new_password" name="new_password" placeholder="Enter new password" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="confirm_password">Confirm New Password</label>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm new password" required>
+            </div>
+            
+            <button type="submit" class="btn">Update Password</button>
+        </form>
+        
+        <div class="footer-links">
+            <a href="/login">Back to Login</a>
+        </div>
+    </div>
+</body>
+</html>

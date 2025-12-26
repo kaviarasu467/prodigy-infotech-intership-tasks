@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Secure System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="login-body">
+    <div class="login-card" style="width: 500px;">
+        <div class="login-header">
+            <div class="user-icon">✅</div>
+            <h1>Dashboard</h1>
+            <p>Authentication Successful</p>
+        </div>
+        <div class="login-content" style="text-align: center;">
+            <h2>Welcome Back!</h2>
+            <p>You have successfully bypassed the login security layer.</p>
+            
+            <div class="info-box" style="background: #f9f9f9; padding: 15px; border-radius: 8px; margin: 20px 0; border-left: 5px solid #8e44ad;">
+                <p><strong>Security Status:</strong> Hashed & Verified</p>
+                <p><strong>Session:</strong> Active</p>
+            </div>
+
+            <a href="/" class="btn-signin" style="text-decoration: none; display: block;">Logout</a>
+        </div>
+    </div>
+</body>
+</html>
