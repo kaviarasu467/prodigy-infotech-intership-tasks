@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple E-Commerce</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1> KAVIARASU'S CART</h1>
+    <button id="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</button>
+  </header>
+
+  <main id="product-list"></main>
+
+  <!-- Cart Popup -->
+  <div id="cart-popup" class="hidden">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p><strong>Total: ₹<span id="cart-total">0</span></strong></p>
+    <button onclick="checkout()">Checkout</button>
+    <button onclick="closeCart()">Close</button>
+  </div>
+  <!-- Checkout Form Popup -->
+<div id="checkout-form-popup" class="hidden">
+  <h2>Enter Delivery Details</h2>
+  <form id="checkout-form" onsubmit="submitCheckoutForm(event)">
+    <label>Address:</label><br>
+    <textarea id="address" required></textarea><br><br>
+    
+    <label>Phone Number:</label><br>
+    <input type="tel" id="phone" required pattern="[0-9]{10}" /><br><br>
+    
+    <button type="submit">Confirm Order</button>
+    <button type="button" onclick="closeCheckoutForm()">Cancel</button>
+  </form>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

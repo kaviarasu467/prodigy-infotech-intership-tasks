@@ -1,0 +1,8 @@
+{
+  "name": "VibeStream",
+  "description": "A high-fidelity social media platform with AI-powered content enhancement, real-time-like interactions, and personalized feeds.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
